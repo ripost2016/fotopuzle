@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 30px;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.wrapper .foto {
+	width: 600px;
+	/*height: 600px;*/
+	margin: 0 auto;
+	background-image: url("../images/moto1.jpg");
+	background-size: contain;
+}
+
+.wrapper .foto div {
+	width: 200px;
+	height: 200px;
+	float: left;
+	background-color: transparent;
+	border: 5px solid white;
+}
+
+.wrapper .foto:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+
+.wrapper .foto span {
+	display: none;
+	width: 100%;
+	text-align: center;
+	line-height: 180px;
+	color: white;
+}
+
+.wrapper .foto div:hover span {
+	display: inline-block;
+}
+
+.wrapper .foto div:hover {
+	background-color: rgba(125, 125, 125, .4);
+}
